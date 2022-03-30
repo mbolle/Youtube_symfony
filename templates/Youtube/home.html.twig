@@ -1,0 +1,15 @@
+{% extends 'base.html.twig'%}
+{% block title %}Youtube{% endblock %}
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="col-12 ">
+                <ul class="list-group">
+            {% for value in artist %}
+            <li class="list-group-item"><a href={{ path("Youtube_music", {a:value})}}>{{ value }} </a></li>
+            {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends 'base.html.twig'%}
+{% block title %}Youtube Music{% endblock %}
+{% block body %}
+    <h1>{{ artist }}</h1>
+    {% for value in songs %}
+        <p>{{ value }}</p>
+    {% endfor %}
+{% endblock %}
